@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #131313;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 107px 134px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.info__heading {
+    width: 253px;
+}
+
+.heading-text {
+    font-size: 27px;
+    text-transform: uppercase;
+    line-height: 37.42px;
+    color: #E3B873;
+    font-weight: 400;
+    margin: 45px 0 0 0;
+}
+
+.info__text {
+    width: 442px;
+}
+
+.text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26.73px;
+    margin: 34px 0;
+}
+
+.info__topics {
+    display: flex;
+    width: 442px;
+    justify-content: space-around;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    width: 213px;
+}
+
+.topic {
+    margin-bottom: 50px;
+}
+
+.topic__heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.topic__text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0%;
+    position: absolute;
+}
+
+.topic-text__active {
+    opacity: 100%;
+}
+
+.images-block {
+    display: flex;
+    flex-direction: column;
+    width: 679px;
+    margin-left: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links__link {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 30%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.links__link:hover, .link__active {
+    color: #E3B873;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #E3B873;
+    opacity: 100%;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.navigator__arrow {
+    color: #FFFFFF;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.navigator__dots {
+    display: flex;
+}
+
+.navigator__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    opacity: 30%;
+}
+
+.navigator__dot:hover, .dot__active {
+    opacity: 100%;
+}
+
+.images {
+    position: relative;
+    width: 679px;
+    height: 482px;
+    margin-top: 45px;
+  }
+
+  .images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .images .image.active {
+    opacity: 1;
+  }
+  
